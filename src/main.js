@@ -3,9 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import 'styles/reset.css'
+import 'styles/border.css'
+import 'styles/iconfont.css'
+import fastClick from 'fastclick'
 
 Vue.config.productionTip = false
-
+fastClick.attach(document.body)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -13,3 +17,4 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+// 路由就是根据网址不同返回给用户的内容不同
